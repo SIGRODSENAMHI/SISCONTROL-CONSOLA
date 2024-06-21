@@ -97,8 +97,8 @@ public class ProcesoVariableThread extends Thread {
 			for (int j = pIniV; j < pFinV; j++) {
 				
 				nomVarDin = listaVar.get(j).getNomvar();
-				
-				if (nomVarDin.equals("N_NIVELMEDIO") || nomVarDin.equals("N_NIV_INST_00") ) {
+
+				if (nomVarDin.equals("N_NIVELMEDIO") || nomVarDin.equals("N_NIV_INST_00") || nomVarDin.equals("N_NIV_INST_10") ) {
 					nomvar = "N_NIVELAGUA";
 				} else {
 					nomvar = nomVarDin;
@@ -205,7 +205,7 @@ public class ProcesoVariableThread extends Thread {
 			mesCap = Integer.parseInt(valor[1]);
 			ms = mesCap-1;
 			mes = Util.obtenerMes(ms);
-//			validar si existe umbral a nivel de estación
+//			validar si existe umbral a nivel de estaciï¿½n
 			
 			umbralBean = umbD.validarExistencia("LNE",nomvar1,codEsta1,mes,vhor1);
 			cant = umbralBean.getCantidad();

@@ -583,7 +583,7 @@ public class Algoritmos {
 		if (variable.equals("N_AIRTEMP")) {
 			flagP = ConsistenciaTemporalPersistencia_N_AIRTEMP(variable,fecha,hora,cod_est,dato);
 		}
-		if (variable.equals("N_NIVELAGUA") || variable.equals("N_NIVELMEDIO") || variable.equals("N_NIV_INST_00") ) {
+		if (variable.equals("N_NIVELAGUA") || variable.equals("N_NIVELMEDIO") || variable.equals("N_NIV_INST_00") || variable.equals("N_NIV_INST_10") ) {
 			flagP = ConsistenciaTemporalPersistencia_N_NIVELAGUA(variable,fecha,hora,cod_est,dato);
 		}
 		

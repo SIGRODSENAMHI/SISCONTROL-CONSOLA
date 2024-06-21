@@ -10,13 +10,13 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <listener>
-    <listener-class>pe.gop.senamhi.listener.QuartzListener</listener-class>
+    <listener-class>pe.gob.senamhi.listener.QuartzListener</listener-class>
   </listener>
   <servlet>
     <description></description>
     <display-name>QuartzController</display-name>
     <servlet-name>QuartzController</servlet-name>
-    <servlet-class>pe.gop.senamhi.controller.QuartzController</servlet-class>
+    <servlet-class>pe.gob.senamhi.controller.QuartzController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>QuartzController</servlet-name>

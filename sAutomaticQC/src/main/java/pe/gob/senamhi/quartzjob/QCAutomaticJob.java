@@ -2,6 +2,7 @@ package pe.gob.senamhi.quartzjob;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -110,7 +111,11 @@ public class QCAutomaticJob implements Job {
 						datosFHBean = datosDao.obtFHProcesar(FIni);
 						FIni = datosFHBean.getFecIncrem();
 						Fec_Pasar = datosFHBean.getFecHora();
-						listaEsta = est.listarEstaciones(Fec_Pasar,GRUPO_ESTA);
+						EstacionesBean obj = new EstacionesBean();
+						obj.setFila(1);
+						obj.setCodesta("212900");
+						listaEsta = Arrays.asList(obj);
+//						listaEsta = est.listarEstaciones(Fec_Pasar,GRUPO_ESTA);
 	
 						totDatos = listaEsta.size();
 						

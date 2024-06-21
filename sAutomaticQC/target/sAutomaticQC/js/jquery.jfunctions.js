@@ -1,7 +1,4 @@
-/*
-    Author     : eccopacondori
-                 © Todos los derechos reservados 2012 - Dataimagenes S.A.C. / Grupo El Comercio - Experian Computec
-*/
+
 function jeObj(id){
     return $("#"+id);
 }
