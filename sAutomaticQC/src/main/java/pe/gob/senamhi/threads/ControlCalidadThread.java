@@ -88,7 +88,7 @@ public class ControlCalidadThread extends Thread{
 	
 	private int CANTIDAD_PROCESOS_VAR = Integer.parseInt(PropiedadesUtil.obtenerPropiedad("configuracion", "cantidadHilosProcesarVariable"));
 	private ProcesosVariableThread[] hilosProcesoVariable = new ProcesosVariableThread[CANTIDAD_PROCESOS_VAR];
-	
+
 	public ControlCalidadThread(List<EstacionesBean> listaEsta, Integer pIni, Integer pFin, String fecHora) {
 		this.listaEsta = listaEsta;
 		this.pIni = pIni;
@@ -114,7 +114,7 @@ public class ControlCalidadThread extends Thread{
 					String error="";
 					LOGGER.info("No existen datos para la estacion " + codEsta + validarDatoBean.getValdato() + " / " + validarDatoBean.getCodesta());
 					String cadena1 = "No existen datos para la estacion: " + codEsta + " <br>" + appname + "<br>";
-				
+
 					if (regData.completarDatos(appname, this.getName(), ip, codEsta,fecha,hora)) {
 						error = cadena1+"Registrado correctamente!<br>";
 						LOGGER.info("Registrado correctamente!");
@@ -123,7 +123,7 @@ public class ControlCalidadThread extends Thread{
 						LOGGER.error("Registro sin exito!: " + codEsta);
 						new EnviaEmailThread(error,correoDestino).start();
 					}
-					
+
 //				Registro de Estaciones que cuentan con datos
 				} else {
 					paramObtBean = dato.obtEstTrabo(codEsta, ip, appname, this.getName(),fecHora);

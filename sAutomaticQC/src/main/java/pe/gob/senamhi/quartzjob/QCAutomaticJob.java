@@ -71,8 +71,8 @@ public class QCAutomaticJob implements Job {
 		fechaActual = functionDao.obtFechaStringBD();
 		horActual = functionDao.obtHoraStringBD();
 		
-//		fechaActual = "17/07/2021";
-//		horActual = "23:00:00";
+//		fechaActual = "22/10/2024";
+//		horActual = "13:00:00";
 		
 		QuartzModel quartzModel = new QuartzModel();
 		if (quartzModel.isJobDisponible(QuartzJobEnum.QC_AUTOMATIC_JOB.codigo())) {
@@ -99,7 +99,7 @@ public class QCAutomaticJob implements Job {
 				}
 				
 				datosFHBean = datosDao.obtFHMinMax(fecHora);
-				
+
 				if (datosFHBean != null) {
 				
 					FIni = datosFHBean.getFecMin();
@@ -111,11 +111,11 @@ public class QCAutomaticJob implements Job {
 						datosFHBean = datosDao.obtFHProcesar(FIni);
 						FIni = datosFHBean.getFecIncrem();
 						Fec_Pasar = datosFHBean.getFecHora();
-						EstacionesBean obj = new EstacionesBean();
-						obj.setFila(1);
-						obj.setCodesta("212900");
-						listaEsta = Arrays.asList(obj);
-//						listaEsta = est.listarEstaciones(Fec_Pasar,GRUPO_ESTA);
+//						EstacionesBean obj = new EstacionesBean();
+//						obj.setFila(1);
+//						obj.setCodesta("4722E032");
+//						listaEsta = Arrays.asList(obj);
+						listaEsta = est.listarEstaciones(Fec_Pasar,GRUPO_ESTA);
 	
 						totDatos = listaEsta.size();
 						

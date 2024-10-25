@@ -58,14 +58,14 @@ public class DatosDaoImpl extends AccesoDB implements DatosDao {
 
 		} catch (Exception e) {
 			paramObtBean = null;
-			LOGGER.error("Error DatosDaoImpl.obtEstTrabo " + e.getMessage() + " COD_ESTA: " + codesta + fecHora);
+			LOGGER.error("Error DatosDaoImpl.obtEstTrabo " + e.getMessage() + " COD_ESTA: " + codesta +" - "+ fecHora);
 		} finally {
 			try {
 				cstmt.close();
 				rs.close();
 				cerrarConexionDS();
 			} catch (Exception e2) {
-				LOGGER.error("Error DatosDaoImpl.obtEstTrabo " + e2.getMessage() + " COD_ESTA: " + codesta + fecHora);
+				LOGGER.error("Error DatosDaoImpl.obtEstTrabo " + e2.getMessage() + " COD_ESTA: " + codesta +" - "+ fecHora);
 			}
 			
 		}
