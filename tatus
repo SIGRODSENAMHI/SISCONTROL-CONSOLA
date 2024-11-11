@@ -1,0 +1,29 @@
+[33mcommit 10b612a9d0f0913ca92b07622852edd3128a8da0[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/DDHI001-mapeo-variable-nivel[m[33m, [m[1;31morigin/feature/DDHI001-mapeo-variable-nivel[m[33m)[m
+Author: leonel perez <leonelp399@gmail.com>
+Date:   Fri Oct 25 12:26:07 2024 -0500
+
+    cambios en el properties de nivel de agua cada 10 min
+
+[33mcommit f853920a49c5d044deadbd02d035a276a8b4a8a1[m
+Author: leonel perez <leonelp399@gmail.com>
+Date:   Fri Oct 25 12:25:35 2024 -0500
+
+    cambios en el properties de nivel de agua cada 10 min
+
+[33mcommit 51f9c505ec6491ceeafd311d604f404e04561516[m
+Author: Dirección de hidrología 05 <dhi05@senamhi.gob.pe>
+Date:   Thu Jun 20 20:32:49 2024 -0500
+
+    [feat][DDHI001] add station for procesaminto
+
+[33mcommit 85f9e35ee1d9c275acae32b69dfbe24957a2752f[m
+Author: Dirección de hidrología 05 <dhi05@senamhi.gob.pe>
+Date:   Tue Jun 4 20:30:48 2024 -0500
+
+    [feat][DDHI000] local env
+
+[33mcommit 38bf45a3502ed2d0fa28a60c3a6fc1d6e0119d93[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: leonel perez <leonelp399@gmail.com>
+Date:   Tue Jun 4 14:36:34 2024 -0500
+
+    first commit
